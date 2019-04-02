@@ -6,12 +6,15 @@ This work was done at the [LIRIS](https://liris.cnrs.fr/) and [ELICO](http://eli
 
 We used a BCN (Biattentive Classification Network) model with ELMo embeddings, implemented with AllenNLP & PyTorch, to classify citations by function.
  
-# Requirements
+### Requirements
 
 This project works with Python 3 and the following packages :
-`
-allennlp (0.7.2)
+
+
+`allennlp (0.7.2)
+
 torch (0.4.1)
+
 numpy (1.15.4)
 `
 
