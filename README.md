@@ -11,7 +11,8 @@ We used a BCN (Biattentive Classification Network) model with ELMo embeddings, i
 This project works with Python 3 and the following packages :
 
 
-`allennlp (0.7.2)
+`
+allennlp (0.7.2)
 
 torch (0.4.1)
 
