@@ -11,13 +11,11 @@ We used a BCN (Biattentive Classification Network) model with ELMo embeddings, i
 This project works with Python 3 and the following packages :
 
 
-`
+```
 allennlp (0.7.2)
-
-torch (0.4.1)
-
+torch (0.4.1
 numpy (1.15.4)
-`
+```
 
 
 The data used in the paper was presented in [Measuring the Evolution of a Scientific Field through Citation Frames](http://jurgens.people.si.umich.edu/citation-function/) by Jurgens Jurgens et al., it is availiable [here](http://jurgens.people.si.umich.edu/citation-function/data/annotated-json-data.tar.gz). 
