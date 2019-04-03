@@ -1,3 +1,7 @@
+"""
+Just the default AllenNLP slighly modified to compute f1 scores
+"""
+
 from typing import Dict, Optional, Union
 
 import numpy

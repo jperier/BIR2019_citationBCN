@@ -7,7 +7,7 @@ from typing import Iterator, List, Dict
 from allennlp.data.fields import TextField, LabelField
 from allennlp.data.tokenizers import Token
 from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, ELMoTokenCharactersIndexer
-from datareaders import Interec_sent_elmo_Reader, InterecReader
+from datareaders import Csv_elmo_Reader
 from random import randint, shuffle
 import custom_bcn
 import shutil
@@ -97,18 +97,12 @@ if restart in ['y', 'Y']:
 else:
     print('Serialization directories kept.\n')
 
-# reading data, making vocabulary
-dataset_reader = InterecReader()
-print('Reading dataset...')
-dataset = dataset_reader.read(DATASET_PATH)
-vocab = Vocabulary.from_instances(dataset)
-
 
 for i in range(NB_CONFIG_FILES*NB_REPEATS):
 
     for j in range(K):
         split_train_test(j, K)
-        dataset_reader = Interec_sent_elmo_Reader()
+        dataset_reader = Csv_elmo_Reader())
         print('Reading training set...')
         trainset = dataset_reader.read(TRAINSET_PATH)
         print('Reading validation set...')
